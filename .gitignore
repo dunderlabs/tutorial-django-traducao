@@ -1,0 +1,10 @@
+*.pyc
+*.DS_Store
+_build/
+*/_build/
+book/_build/
+*.log
+*.tmpproj
+*.db
+.DS_Store
+
