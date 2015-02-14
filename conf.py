@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
-# Tutorial Django Oficial - pt-BR documentation build configuration file, created by
-# sphinx-quickstart on Sat Feb  7 23:34:05 2015.
+# Tutorial Oficial Django documentation build configuration file, created by
+# sphinx-quickstart on Sun Feb  8 11:50:17 2015.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -12,8 +12,8 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-import sys
-import os
+import sys, os
+sys.path.append(os.path.abspath('sphinx-extensions'))
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -28,7 +28,7 @@ import os
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = []
+extensions = ["sphinx.ext.viewcode"]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -43,7 +43,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Tutorial Django Oficial - pt-BR'
+project = u'Tutorial Oficial Django'
 copyright = u'2015, Indacode'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -51,7 +51,7 @@ copyright = u'2015, Indacode'
 # built documents.
 #
 # The short X.Y version.
-version = '1.0'
+version = '1.7'
 # The full version, including alpha/beta/rc tags.
 release = '1.0'
 
@@ -98,7 +98,7 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'default'
+html_theme = 'nature'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -110,7 +110,7 @@ html_theme = 'default'
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-#html_title = None
+html_title = "Tutorial Oficial Django - pt-BR"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -140,7 +140,7 @@ html_static_path = ['_static']
 
 # If true, SmartyPants will be used to convert quotes and dashes to
 # typographically correct entities.
-#html_use_smartypants = True
+html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
 #html_sidebars = {}
@@ -176,7 +176,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'TutorialDjangoOficial-pt-BRdoc'
+htmlhelp_basename = 'TutorialOficialDjangodoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -196,7 +196,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'TutorialDjangoOficial-pt-BR.tex', u'Tutorial Django Oficial - pt-BR Documentation',
+  ('index', 'TutorialOficialDjango.tex', u'Tutorial Oficial Django Documentation',
    u'Indacode', 'manual'),
 ]
 
@@ -226,7 +226,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'tutorialdjangooficial-pt-br', u'Tutorial Django Oficial - pt-BR Documentation',
+    ('index', 'tutorialoficialdjango', u'Tutorial Oficial Django Documentation',
      [u'Indacode'], 1)
 ]
 
@@ -240,8 +240,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'TutorialDjangoOficial-pt-BR', u'Tutorial Django Oficial - pt-BR Documentation',
-   u'Indacode', 'TutorialDjangoOficial-pt-BR', 'One line description of project.',
+  ('index', 'TutorialOficialDjango', u'Tutorial Oficial Django Documentation',
+   u'Indacode', 'TutorialOficialDjango', 'One line description of project.',
    'Miscellaneous'),
 ]
 
